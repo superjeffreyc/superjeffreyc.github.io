@@ -1,2 +1,3 @@
 name: Jeffrey Chan's GitHub Website
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
