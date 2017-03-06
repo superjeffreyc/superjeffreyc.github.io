@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background: transparent  url(http://imgur.com/ksx1FzV.jpg) no-repeat;
+    background: transparent  url("../harpa_ceiling.jpg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
 }
