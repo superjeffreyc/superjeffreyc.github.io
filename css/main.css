@@ -1,6 +1,9 @@
 body {
     margin: 60px auto;
     width: 70%;
+    background: transparent  url(http://imgur.com/ksx1FzV.jpg) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
