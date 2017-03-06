@@ -14,7 +14,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #999;
+    color: #0660FE;
 }
 a:hover {
     text-decoration: underline;
@@ -40,4 +40,9 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.small {
+    height: 30%;
+    width: 30%;
 }
