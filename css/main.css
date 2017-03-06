@@ -42,7 +42,8 @@ ul.posts li {
     list-style: none;
 }
 
-.small {
-    height: 30%;
-    width: 30%;
+img {
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
 }
