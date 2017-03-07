@@ -1,4 +1,4 @@
-# My GitHub Website
+# Jeffrey Chan's GitHub Website
 
 https://superjeffreyc.github.io/
 
