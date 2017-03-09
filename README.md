@@ -1,4 +1,4 @@
-# Jeffrey Chan's GitHub Website
+# Jeffrey Chan's Personal Website
 
 https://superjeffreyc.github.io/
 
