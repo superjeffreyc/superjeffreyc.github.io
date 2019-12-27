@@ -1,0 +1,33 @@
+body {
+    margin: 60px auto;
+    width: 70%;
+    background: transparent  url("../harpa_ceiling.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+    color: #0660FE;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+img {
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+}
