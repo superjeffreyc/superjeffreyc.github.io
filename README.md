@@ -2,7 +2,7 @@
 
 https://superjeffreyc.github.io/
 
-## To test locally on Cloud9
+## Local setup
 First, install Ruby, then enter the following command:
 
     $ gem install bundler
