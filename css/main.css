@@ -46,7 +46,7 @@ ul.posts li {
     list-style: none;
 }
 
-profile-pic {
+.profile-pic {
     height: 15%;
     width: 15%;
     border-radius: 50%;
