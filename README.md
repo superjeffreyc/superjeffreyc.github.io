@@ -1,6 +1,6 @@
 # Jeffrey Chan's Personal Website
 
-https://superjeffreyc.github.io/
+https://superjeffc.com
 
 ## Local setup
 First, install Ruby, then enter the following command:
