@@ -2,26 +2,17 @@
 <html>
 	<head>
 		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	</head>
 
 	<body>
-		<center>
 		<div class="container">
     		{{ content }}
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-				<li><a target="_blank" href="https://www.youtube.com/@superjeffc-piano">🎹 Watch my Piano Covers</a></li>
-				<li><a target="_blank" href="https://superjeffc.com/recipes">🍳 Recipes</a></li>
-				<li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.jeffreychan.yunnori">🥢 Yut: Korean Board Game</a></li>
-				<li><a target="_blank" href="https://bigbowl.superjeffc.com">🧩 Big Bowl: Word Party Game</a></li>
-				<li><a target="_blank" href="https://wordfrog.superjeffc.com">🐸 Word Frog: Word Guessing Game</a></li>
-			</ul>
+		</div><footer>
 			<ul>
-				<li><a href="/" class="contact-link">🏠 Home</a></li>
-				<li><a href="javascript:void(0)" onclick="launchEmail(this)" class="contact-link">✉️ Contact Me</a></li>
+				<li><a href="/" class="contact-link"><i class="fas fa-home"></i> Home</a></li>
+				<li><a href="javascript:void(0)" onclick="launchEmail(this)" class="contact-link"><i class="fas fa-envelope"></i> Contact Me</a></li>
 			</ul>
 		</footer>
 
@@ -31,6 +22,5 @@
 			  window.location.href = atob(secret);
 			}
 		</script>
-		</center>
 	</body>
 </html>

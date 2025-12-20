@@ -54,6 +54,60 @@ ul.posts li {
 
 .contact-link {
     display: inline-block;
-    margin-top: 60px; 
+    margin-top: 60px;
+    text-decoration: none;
+}
+
+/* Social Links */
+.social-links {
+    margin: 20px 0;
+    font-size: 1.5em;
+}
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+.btn-resume {
+    font-size: 0.8em;
+    border: 2px solid #333;
+    padding: 8px 16px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.btn-resume:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.card h3 {
+    margin-top: 0;
+}
+.card-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
     text-decoration: none;
 }
