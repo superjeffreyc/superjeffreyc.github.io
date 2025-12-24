@@ -1,4 +1,4 @@
-# Jeffrey Chan's Personal Website
+# Jeff Chan's Personal Website
 
 https://superjeffc.com
 
