@@ -2,35 +2,186 @@
 layout: recipe
 title: Vegetables
 ---
-<div class="blurb">
+<img src="https://assets.superjeffc.com/food/vegetables.jpg" alt="Vegetables" class="recipe-hero">
 
-<h1>Vegetables</h1>
-  <h3>Ingredients</h3>
-  <ul>
-    <li>Vegetables</li>
-    <li>Salt</li>
-    <li>Oyster Sauce (boiling)</li>    
-    <li>Garlic (stir fry)</li>
-    <li>Canola Oil (stir fry)</li>    
-  </ul>
+<div class="recipe-container">
 
-  <h3>Boiling Steps</h3>
-  <ol>
-    <li>Wash the vegetables</li>
-    <li>Add water, a pinch of salt, and a swirl of canola oil to pot and bring to boil</li>
-    <li>Place vegetables in pot</li>
-    <li>Take vegetables out when translucent</li>    
-    <li>Add a swirl of oyster sauce</li>    
-  </ol>
+  <header class="recipe-header">
+    <h1>Vegetables</h1>
+    <div class="recipe-meta">
+      <span>⏱️ 15 Mins</span>
+      <span>🥣 Serves 2</span>
+    </div>
+  </header>
 
-  <h3>Stir Fry Steps</h3>
-  <ol>
-    <li>Wash the vegetables</li>
-    <li>Dice garlic and place into wok with canola oil</li>
-    <li>Turn on flame to medium and brown the garlic</li>
-    <li>Add the vegetables (be careful of splashing oil)</li>
-    <li>Season generously with salt</li>
-    <li>Mix well until vegetables are translucent</li>    
-  </ol>
-  
-</div><!-- /.blurb -->
+  <div class="recipe-content">
+
+    <aside class="recipe-ingredients">
+      <h3>Ingredients</h3>
+      <ul class="ingredient-list">
+        <li>Vegetables</li>
+        <li>Salt</li>
+        <li>Oyster Sauce (boiling)</li>
+        <li>Garlic (stir fry)</li>
+        <li>Canola Oil (stir fry)</li>
+      </ul>
+    </aside>
+
+    <section class="recipe-steps">
+      <h3>Instructions</h3>
+      <ol class="step-list">
+        <li>Wash the vegetables</li>
+        <li>Dice garlic and place into wok with canola oil</li>
+        <li>Turn on flame to medium and brown the garlic</li>
+        <li>Add the vegetables (be careful of splashing oil)</li>
+        <li>Season generously with salt</li>
+        <li>Mix well until vegetables are translucent</li>
+      </ol>
+    </section>
+
+  </div>
+</div>
+
+
+<style>
+  /* Base Variables for Consistency */
+  :root {
+    --primary-color: #2c3e50;
+    --accent-color: #e67e22; /* A nice food-appetizing orange */
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --border-radius: 12px;
+  }
+
+  /* Layout & Container */
+  .recipe-container {
+    max-width: 900px;
+    margin: -40px auto 40px; /* Pulls card up over hero image */
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+  }
+
+  /* Hero Image Styling */
+  .recipe-hero {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+
+  /* Typography */
+  .recipe-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  .recipe-meta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  /* Two-Column Layout for Desktop */
+  .recipe-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Ingredients narrow, steps wide */
+    gap: 40px;
+  }
+
+  /* Interactive Ingredients List */
+  .ingredient-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .ingredient-list li {
+    margin-bottom: 12px;
+  }
+
+  .ingredient-list label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .ingredient-list input[type="checkbox"] {
+    margin-right: 12px;
+    accent-color: var(--accent-color);
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Strikethrough effect when checked */
+  .ingredient-list input:checked + span,
+  .ingredient-list input:checked + label {
+    text-decoration: line-through;
+    color: #999;
+  }
+
+  /* Steps Styling */
+  .step-list {
+    counter-reset: step-counter;
+    list-style: none;
+    padding: 0;
+  }
+
+  .step-list li {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .step-list li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .recipe-content {
+      grid-template-columns: 1fr; /* Stack vertically on mobile */
+    }
+
+    .recipe-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+</style>
