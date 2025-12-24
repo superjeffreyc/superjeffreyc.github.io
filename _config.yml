@@ -1,4 +1,8 @@
-name: Jeffrey Chan's GitHub Website
+title: Jeffrey Chan | Software Engineer
+name: Jeffrey Chan | Software Engineer
+description: Personal portfolio and landing page
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 theme: minima
+favicon_path: favicon.ico
+repository: superjeffc/superjeffc.github.io
