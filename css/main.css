@@ -1,9 +1,13 @@
 body {
-    margin: 60px auto;
+    margin: 0 auto;
+    padding-top: 60px;
     width: 70%;
-    background: transparent  url("../harpa_ceiling.webp") no-repeat;
+    background: transparent url("../harpa_ceiling.webp") no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: block;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
