@@ -3,6 +3,51 @@
 	<head>
 		<title>{{ page.title }}</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+
+		<script type="application/ld+json">
+		{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+			"@type": "Person",
+			"@id": "https://superjeffc.com/#person",
+			"name": "Jeff Chan",
+			"jobTitle": "Software Engineer",
+			"url": "https://superjeffc.com",
+			"sameAs": [
+				"https://github.com/superjeffc",
+				"https://linkedin.com/in/superjeffc",
+				"https://youtube.com/@superjeffc-piano"
+			],
+			"description": "Software Engineer specializing in interactive web applications, cooking recipes, and piano arrangements."
+			},
+			{
+			"@type": "WebSite",
+			"@id": "https://superjeffc.com/#website",
+			"url": "https://superjeffc.com",
+			"name": "superjeffc",
+			"publisher": { "@id": "https://superjeffc.com/#person" },
+			"hasPart": [
+				{
+				"@type": "WebSite",
+				"name": "Word Frog",
+				"url": "https://wordfrog.superjeffc.com"
+				},
+				{
+				"@type": "WebSite",
+				"name": "Big Bowl",
+				"url": "https://bigbowl.superjeffc.com"
+				},
+				{
+				"@type": "CollectionPage",
+				"name": "Recipes",
+				"url": "https://superjeffc.com/recipes"
+				}
+			]
+			}
+		]
+		}
+		</script>
 	</head>
 
 	<body>
