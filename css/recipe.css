@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background: transparent  url("../harpa_ceiling.jpg") no-repeat;
+    background: transparent  url("../harpa_ceiling.webp") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -37,12 +37,11 @@ footer {
     font-size: .8em;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
 ul.posts li {
     list-style: none;
 }
-

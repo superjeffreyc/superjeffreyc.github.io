@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background: transparent  url("../harpa_ceiling.jpg") no-repeat;
+    background: transparent  url("../harpa_ceiling.webp") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -47,9 +47,12 @@ ul.posts li {
 }
 
 .profile-pic {
-    height: 15%;
-    width: 15%;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 0 1rem 0;
 }
 
 .contact-link {
