@@ -100,12 +100,13 @@
         .container {
             width: 100%;
             max-width: 1000px;
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
+            display: flex;
+            grid-template-columns: 1fr;
             background: var(--card-bg);
             border-radius: 24px;
             overflow: hidden;
             box-shadow: var(--shadow);
+            flex-direction: column;
         }
 
         /* Sidebar / Info Section */
@@ -260,6 +261,8 @@
         @media (max-width: 850px) {
             .container {
                 grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
             }
             .contact-info {
                 padding: 30px;
