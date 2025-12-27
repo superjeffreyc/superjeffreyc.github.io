@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Jeff Chan | Let's Talk</title>
-    <meta name="title" content="Contact Jeff Chan | Let's Talk">
+    <title>Contact Jeff Chan | Let's Chat</title>
+    <meta name="title" content="Contact Jeff Chan | Let's Chat">
     <meta name="description" content="Have a project in mind or just want to say hi? Reach out to Jeff Chan through this contact form.">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://superjeffc.com/contact">
-    <meta property="og:title" content="Contact Jeff Chan | Let's Talk">
+    <meta property="og:title" content="Contact Jeff Chan | Let's Chat">
     <meta property="og:description" content="Have a project in mind or just want to say hi? Reach out to Jeff Chan through this contact form.">
     <meta property="og:image" content="https://superjeffc.com/jeff_chan_photo.webp"> <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Contact Jeff Chan">
@@ -153,6 +153,7 @@
         .social-links {
             display: flex;
             gap: 15px;
+            padding-top: 15px;
         }
 
         .social-links a {
@@ -232,11 +233,25 @@
         /* Message Box */
         #status-message {
             margin-top: 20px;
-            padding: 12px;
-            border-radius: 8px;
+            padding: 15px;
+            border-radius: 12px;
             text-align: center;
-            display: none;
-            font-size: 0.9rem;
+            font-weight: 500;
+            display: none; /* Hidden by default */
+        }
+
+        .visible-success {
+            display: block !important;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success-color);
+            border: 1px solid var(--success-color);
+        }
+
+        .visible-error {
+            display: block !important;
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--error-color);
+            border: 1px solid var(--error-color);
         }
 
         .success { background: rgba(16, 185, 129, 0.1); color: var(--success-color); border: 1px solid var(--success-color); display: block !important; }
@@ -289,7 +304,7 @@
         <!-- Sidebar Info -->
         <aside class="contact-info">
             <div class="info-header">
-                <h2>Let's talk</h2>
+                <h2>Let's Chat</h2>
                 <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
             </div>
 
@@ -328,8 +343,9 @@
                     <span id="btnText">Send Message</span>
                 </button>
 
-                <div id="status-message"></div>
             </form>
+
+            <div id="status-message"></div>
         </main>
     </div>
 
@@ -347,7 +363,6 @@
             // UI Feedback: Loading
             btnText.textContent = 'Sending...';
             submitBtn.disabled = true;
-            statusMsg.style.display = 'none';
 
             // Gather data
             const formData = new FormData(form);
@@ -364,7 +379,7 @@
 
                 if (response.ok) {
                     statusMsg.textContent = "Thanks! Your message has been sent successfully.";
-                    statusMsg.className = "status-success";
+                    statusMsg.className = "visible-success";
                     form.reset();
                     btnText.textContent = 'Message Sent!';
                 } else {
@@ -373,7 +388,7 @@
             } catch (error) {
                 console.error('Error:', error);
                 statusMsg.textContent = "Oops! Something went wrong. Please try again later.";
-                statusMsg.className = "status-error";
+                statusMsg.className = "visible-error";
                 btnText.textContent = 'Send Message';
                 submitBtn.disabled = false;
             }
