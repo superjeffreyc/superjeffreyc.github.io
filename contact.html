@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Jeff Chan | Let's Talk</title>
     <meta name="title" content="Contact Jeff Chan | Let's Talk">
     <meta name="description" content="Have a project in mind or just want to say hi? Reach out to Jeff Chan through this contact form.">
+
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://superjeffc.com/contact"> <meta property="og:title" content="Contact Jeff Chan | Let's Talk">
+    <meta property="og:url" content="https://superjeffc.com/contact">
+    <meta property="og:title" content="Contact Jeff Chan | Let's Talk">
     <meta property="og:description" content="Have a project in mind or just want to say hi? Reach out to Jeff Chan through this contact form.">
     <meta property="og:image" content="https://superjeffc.com/jeff_chan_photo.webp"> <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="Contact Jeff Chan">
     <meta property="twitter:description" content="Get in touch for collaborations or project inquiries.">
 
-    <title>Contact Jeff Chan | Let's Talk</title>
+    <link rel="canonical" href="https://superjeffc.com/contact" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
     <style>
         .back-home {
             position: fixed;
@@ -246,11 +252,11 @@
     </style>
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contact Jeff Chan",
-    "description": "Contact page for Jeff Chan for project inquiries and professional networking.",
-    "mainEntity": {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact Jeff Chan",
+      "description": "Contact page for Jeff Chan for project inquiries and professional networking.",
+      "mainEntity": {
         "@type": "Person",
         "name": "Jeff Chan",
         "url": "https://superjeffc.com",
@@ -264,7 +270,7 @@
             "contactType": "professional inquiry",
             "url": "https://superjeffc.com/contact"
         }
-    }
+      }
     }
     </script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
@@ -297,17 +303,17 @@
             <form id="personalContactForm">
                 <div class="form-group">
                     <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="name" placeholder="John Doe" required>
+                    <input type="text" id="full-name" name="name" placeholder="John Doe" autocomplete="name" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required>
                 </div>
 
                 <div class="form-group">
                     <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="How can I help you?" required>
+                    <input type="text" id="subject" name="subject" placeholder="How can I help you?" autocomplete="off" required>
                 </div>
 
                 <div class="form-group">
