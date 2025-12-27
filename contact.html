@@ -235,6 +235,7 @@
             }
         }
     </style>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
     <a href="/" class="back-home">
@@ -282,6 +283,8 @@
                     <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
                 </div>
 
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAACJTEik3RwZJb28c"></div>
+
                 <button type="submit" class="submit-btn" id="submitBtn">
                     <span id="btnText">Send Message</span>
                 </button>
@@ -292,7 +295,7 @@
     </div>
 
     <script>
-        const WORKER_URL = 'https://contact.superjeffc.workers.dev';
+        const WORKER_URL = 'https://contact.superjeffc.com/';
 
         const form = document.getElementById('personalContactForm');
         const statusMsg = document.getElementById('status-message');
