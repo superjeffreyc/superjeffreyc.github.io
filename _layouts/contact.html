@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>{{ page.title }}</title>
+
+		<meta name="title" content="Contact Jeff Chan | Let's Chat">
+		<meta name="description" content="Have a project in mind or just want to say hi? Reach out to Jeff Chan through this contact form.">
+		<meta name="author" content="Jeff Chan">
+        <meta name="robots" content="index, follow">
+
+        <meta property="og:type" content="{% if page.url == '/contact' %}profile{% else %}website{% endif %}">
+        <meta property="og:url" content="https://superjeffc.com{{ page.url }}">
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Explore software projects, authentic home-cooked recipes, and piano arrangements by Jeff Chan.{% endif %}">
+        <meta property="og:image" content="https://superjeffc.com/jeff_chan_photo.webp">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Software engineering, cooking recipes, and piano by Jeff Chan.{% endif %}">
+
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+		<script type="application/ld+json">
+		{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+			"@type": "Person",
+			"@id": "https://superjeffc.com/#person",
+			"name": "Jeff Chan",
+			"jobTitle": "Software Engineer",
+			"url": "https://superjeffc.com",
+			"sameAs": [
+				"https://github.com/superjeffc",
+				"https://linkedin.com/in/superjeffc",
+				"https://youtube.com/@superjeffc-piano"
+			],
+			"description": "Software Engineer specializing in interactive web applications, cooking recipes, and piano arrangements."
+			},
+			{
+				"@type": "ContactPage",
+            	"@id": "https://superjeffc.com/contact",
+            	"url": "https://superjeffc.com/contact",
+            	"name": "Contact Jeff Chan",
+            	"description": "Get in touch with Jeff Chan for software engineering inquiries or collaborations.",
+            	"mainEntity": {
+					"@id": "https://superjeffc.com/#person"
+				}
+			}
+		]
+		}
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+    		{{ content }}
+		</div><footer>
+			<ul>
+				<li><a href="/" class="contact-link">Home</a></li>
+				<li><a href="/contact" class="contact-link">Contact</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

@@ -53,7 +53,8 @@ p {
     color: #333;
 }
 footer {
-    border-top: 1px solid #d5d5d5;
+    margin-top: 20px;
+    border-top: 2px solid #000000;
     font-size: .8em;
 }
 

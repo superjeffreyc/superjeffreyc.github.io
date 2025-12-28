@@ -1,356 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: contact
+title: Contact | Jeff Chan
+---
 
-    <title>Contact Jeff Chan | Let's Chat</title>
-    <meta name="title" content="Contact Jeff Chan | Let's Chat">
-    <meta name="description" content="Have a project in mind or just want to say hi? Reach out to Jeff Chan through this contact form.">
+<div class="blurb">
+    <h1>Let's Chat.</h1>
+    <p class="intro-text">
+        Fill out the form below to connect with me.
+    </p>
+    <div class="social-links">
+        <a href="https://github.com/superjeffc" target="_blank" title="GitHub" aria-label="GitHub">
+            <svg height="32" viewBox="0 0 16 16" width="32" class="social-icon" aria-hidden="true" role="img">
+                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+            </svg>
+        </a>
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://superjeffc.com/contact">
-    <meta property="og:title" content="Contact Jeff Chan | Let's Chat">
-    <meta property="og:description" content="Have a project in mind or just want to say hi? Reach out to Jeff Chan through this contact form.">
-    <meta property="og:image" content="https://superjeffc.com/jeff_chan_photo.webp"> <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Contact Jeff Chan">
-    <meta property="twitter:description" content="Get in touch for collaborations or project inquiries.">
-
-    <link rel="canonical" href="https://superjeffc.com/contact" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-    <style>
-        .back-home {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            text-decoration: none;
-            color: var(--text-main);
-            background: var(--card-bg);
-            padding: 10px 18px;
-            border-radius: 12px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            border: 1px solid var(--border-color);
-            z-index: 100;
-        }
-
-        .back-home:hover {
-            transform: translateX(-4px);
-            background: var(--primary-color);
-            color: white;
-            border-color: var(--primary-color);
-        }
-
-        @media (max-width: 850px) {
-            .back-home {
-                position: absolute; /* Moves it inside the flow on small screens if needed */
-                top: 15px;
-                left: 15px;
-            }
-        }
-
-        :root {
-            --primary-color: #6366f1;
-            --primary-hover: #4f46e5;
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-            --border-color: #e2e8f0;
-            --success-color: #10b981;
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #0f172a;
-                --card-bg: #1e293b;
-                --text-main: #f1f5f9;
-                --text-muted: #94a3b8;
-                --border-color: #334155;
-            }
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-            padding-top: 80px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1000px;
-            display: flex;
-            grid-template-columns: 1fr;
-            background: var(--card-bg);
-            border-radius: 24px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            flex-direction: column;
-        }
-
-        /* Sidebar / Info Section */
-        .contact-info {
-            background: var(--primary-color);
-            padding: 40px;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .info-header h2 {
-            font-size: 2rem;
-            margin-bottom: 12px;
-        }
-
-        .info-header p {
-            opacity: 0.9;
-            font-size: 1rem;
-        }
-
-        .details {
-            margin: 40px 0;
-        }
-
-        .detail-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 24px;
-            gap: 15px;
-        }
-
-        .icon-circle {
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 12px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-style: normal;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 15px;
-            padding-top: 15px;
-        }
-
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            font-size: 0.9rem;
-            transition: var(--transition);
-        }
-
-        .social-links a:hover {
-            background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-2px);
-        }
-
-        /* Form Section */
-        .contact-form-container {
-            padding: 40px;
-        }
-
-        .form-group {
-            margin-bottom: 24px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            font-size: 0.9rem;
-            color: var(--text-main);
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 16px;
-            border: 2px solid var(--border-color);
-            border-radius: 12px;
-            background: transparent;
-            color: var(--text-main);
-            font-size: 1rem;
-            transition: var(--transition);
-            outline: none;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 14px;
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 12px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .submit-btn:hover {
-            background: var(--primary-hover);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
-        }
-
-        /* Message Box */
-        #status-message {
-            margin-top: 20px;
-            padding: 15px;
-            border-radius: 12px;
-            text-align: center;
-            font-weight: 500;
-            display: none; /* Hidden by default */
-        }
-
-        .visible-success {
-            display: block !important;
-            background: rgba(16, 185, 129, 0.1);
-            color: var(--success-color);
-            border: 1px solid var(--success-color);
-        }
-
-        .visible-error {
-            display: block !important;
-            background: rgba(239, 68, 68, 0.1);
-            color: var(--error-color);
-            border: 1px solid var(--error-color);
-        }
-
-        .success { background: rgba(16, 185, 129, 0.1); color: var(--success-color); border: 1px solid var(--success-color); display: block !important; }
-
-        /* Responsive */
-        @media (max-width: 850px) {
-            .container {
-                grid-template-columns: 1fr;
-                display: flex;
-                flex-direction: column;
-            }
-            .contact-info {
-                padding: 30px;
-            }
-        }
-    </style>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ContactPage",
-      "name": "Contact Jeff Chan",
-      "description": "Contact page for Jeff Chan for project inquiries and professional networking.",
-      "mainEntity": {
-        "@type": "Person",
-        "name": "Jeff Chan",
-        "url": "https://superjeffc.com",
-        "jobTitle": "Software Engineer",
-        "sameAs": [
-            "https://linkedin.com/in/superjeffc",
-            "https://github.com/superjeffc"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "professional inquiry",
-            "url": "https://superjeffc.com/contact"
-        }
-      }
-    }
-    </script>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-</head>
-<body>
-    <a href="/" class="back-home">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="19" y1="12" x2="5" y2="12"></line>
-            <polyline points="12 19 5 12 12 5"></polyline>
-        </svg>
-        Back to Home
-    </a>
-
-    <div class="container">
-        <!-- Sidebar Info -->
-        <aside class="contact-info">
-            <div class="info-header">
-                <h2>Let's Chat</h2>
-                <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
-            </div>
-
-            <div class="social-links">
-                <a href="https://linkedin.com/in/superjeffc">LinkedIn</a>
-                <a href="https://github.com/superjeffc">GitHub</a>
-            </div>
-        </aside>
-
-        <!-- Main Form -->
-        <main class="contact-form-container">
-            <form id="personalContactForm">
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" id="full-name" name="name" placeholder="John Doe" autocomplete="name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="How can I help you?" autocomplete="off" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
-                </div>
-
-                <div class="cf-turnstile" data-sitekey="0x4AAAAAACJTEik3RwZJb28c"></div>
-
-                <button type="submit" class="submit-btn" id="submitBtn">
-                    <span id="btnText">Send Message</span>
-                </button>
-
-            </form>
-
-            <div id="status-message"></div>
-        </main>
+        <a href="https://linkedin.com/in/superjeffc" target="_blank" title="LinkedIn" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16" class="social-icon" aria-hidden="true" role="img">
+                <path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5 5 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+            </svg>
+        </a>
     </div>
+</div>
+
+<hr class="divider">
+
+<div class="projects-section">
+    <div class="contact-container">
+
+        <div class="card form-card">
+            <div class="card-content">
+                <form id="personalContactForm">
+                    <div class="form-group">
+                        <label for="full-name">Name</label>
+                        <input type="text" id="full-name" name="name" placeholder="John Doe" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry" autocomplete="off" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                    </div>
+
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAACJTEik3RwZJb28c"></div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <span id="btnText">Send Message</span>
+                    </button>
+                </form>
+
+                <div id="status-message"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-card:hover {
+        transform: none !important;
+        box-shadow: var(--shadow); /* Optional: keeps the shadow static too */
+    }
+
+    /* Center the form and limit width */
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+
+    .form-card {
+        width: 100%;
+        max-width: 600px; /* Limits width so it doesn't stretch too far */
+        text-align: left; /* Overrides center alignment from cards if necessary */
+        background: var(--card-bg, #fff); /* Fallback to white if var not defined */
+        cursor: default; /* Remove pointer cursor from index cards */
+    }
+
+    /* Form Inputs Styling to match cleanliness of Index */
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #333;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 95%;
+        padding: 12px;
+        border: 2px solid #e2e8f0;
+        border-radius: 8px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+        font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: #6366f1; /* Your primary indigo color */
+        outline: none;
+    }
+
+    /* Button Styling */
+    .submit-btn {
+        width: 100%;
+        padding: 12px;
+        background-color: #6366f1;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+        background-color: #4f46e5;
+    }
+
+    .submit-btn:disabled {
+        background-color: #a5a6f6;
+        cursor: not-allowed;
+    }
+
+    /* Status Messages */
+    #status-message {
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 0.9rem;
+        display: none;
+    }
+
+    .visible-success { display: block !important; background: #d1fae5; color: #065f46; }
+    .visible-error { display: block !important; background: #fee2e2; color: #991b1b; }
+</style>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
     <script>
         const WORKER_URL = 'https://contact.superjeffc.com/';
@@ -397,5 +199,3 @@
             }
         });
     </script>
-</body>
-</html>
