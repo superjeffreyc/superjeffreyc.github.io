@@ -186,6 +186,7 @@ title: Contact | Jeff Chan
                     statusMsg.textContent = "Thanks! Your message has been sent successfully.";
                     statusMsg.className = "visible-success";
                     form.reset();
+                    form.style.display = 'none';
                     btnText.textContent = 'Message Sent!';
                 } else {
                     throw new Error('Server responded with an error.');
