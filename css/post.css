@@ -1,0 +1,145 @@
+:root {
+    --bg-color: #fdfcf8;
+    --text-color: #2c2c2c;
+    --accent-color: #5d6d54; /* Sage Green */
+    --border-color: #e0e0e0;
+    --font-serif: 'Georgia', serif;
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    position: relative;
+}
+
+/* --- POST LAYOUT SPECIFIC STYLES --- */
+
+.post-container {
+    max-width: 800px; /* Slightly narrower than index for reading focus */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styling within the post */
+.post-header {
+    text-align: center;
+    margin: 60px auto 80px;
+}
+
+.post-title {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 10px 0 20px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-transform: lowercase;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    color: #888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --- MARKDOWN CONTENT STYLING --- */
+/* This targets everything inside the {{ content }} tag */
+
+.post-content {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* The Lede: The first paragraph is emphasized */
+.post-content > p:first-of-type {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 2.5rem;
+}
+
+/* Headings from Markdown (###) */
+.post-content h2,
+.post-content h3 {
+    font-family: var(--font-serif);
+    color: var(--accent-color);
+    margin-top: 3.5rem;
+    margin-bottom: 1.2rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.post-content h2 { font-size: 2.2rem; }
+.post-content h3 { font-size: 1.8rem; }
+
+/* Body Paragraphs */
+.post-content p {
+    margin-bottom: 1.8rem;
+}
+
+/* Bold text inside posts */
+.post-content strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* Lists (1. or - in Markdown) */
+.post-content ol,
+.post-content ul {
+    margin: 2.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.post-content li {
+    margin-bottom: 1.2rem;
+    padding-left: 10px;
+}
+
+.post-content li::marker {
+    color: var(--accent-color);
+    font-family: var(--font-serif);
+    font-weight: bold;
+}
+
+/* Blockquotes (> in Markdown) */
+.post-content blockquote {
+    margin: 4rem 0;
+    padding: 10px 40px;
+    border-left: 1px solid var(--accent-color);
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1.4rem;
+    color: #555;
+    background-color: #f9f9f6; /* Very subtle shift from body bg */
+}
+
+/* Images in Markdown (![alt](url)) */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 3rem auto;
+    border-radius: 2px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+    .post-title {
+        font-size: 2.5rem;
+    }
+
+    .post-content {
+        font-size: 1.1rem;
+    }
+
+    .post-content > p:first-of-type {
+        font-size: 1.3rem;
+    }
+}

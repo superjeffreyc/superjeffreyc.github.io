@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>{{ page.title }}</title>
+
+		{% assign desc = page.excerpt | default: "Personal blog of Jeff Chan, focusing on intentional use of seasonings rather than a reliance on them." | strip_html | normalize_whitespace | truncate: 160 %}
+
+		<meta name="description" content="{{ desc }}">
+		<meta name="author" content="Jeff Chan">
+		<meta name="robots" content="index, follow">
+
+		<meta property="og:type" content="article">
+        <meta property="og:url" content="https://superjeffc.com{{ page.url }}">
+		<meta property="og:title" content="{{ page.title }}">
+		<meta property="og:description" content="{{ desc }}">
+		<meta property="og:image" content="https://superjeffc.com/jeff_chan_photo.webp">
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="{{ page.title }}">
+		<meta name="twitter:description" content="{{ desc }}">
+
+		<link rel="stylesheet" type="text/css" href="/css/blog.css">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="canonical" href="https://superjeffc.com{{ page.url }}">
+
+		<script type="application/ld+json">
+		{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+			"@type": "Person",
+			"@id": "https://superjeffc.com/#person",
+			"name": "Jeff Chan",
+			"jobTitle": "Software Engineer",
+			"url": "https://superjeffc.com",
+			"sameAs": [
+				"https://github.com/superjeffc",
+				"https://linkedin.com/in/superjeffc",
+				"https://youtube.com/@superjeffc-piano"
+			],
+			"description": "Software Engineer specializing in interactive web applications, cooking recipes, and piano arrangements."
+			},
+			{
+			"@type": "Blog",
+			"@id": "https://superjeffc.com/blog/#blog",
+			"url": "https://superjeffc.com/blog",
+			"name": "Unsalted & Unsweetened",
+			"publisher": { "@id": "https://superjeffc.com/#person" },
+			"hasPart": [
+				{
+				"@type": "SoftwareApplication",
+				"name": "Word Frog",
+				"url": "https://wordfrog.superjeffc.com",
+				"description": "A daily interactive, browser-based word guessing game that challenges your vocabulary.",
+				"applicationCategory": "EducationalApplication",
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "USD",
+					"availability": "https://schema.org/OnlineOnly"
+				},
+				"operatingSystem": "Web"
+				},
+				{
+				"@type": "SoftwareApplication",
+				"name": "Big Bowl",
+				"url": "https://bigbowl.superjeffc.com",
+				"description": "An interactive, browser-based word party game for groups.",
+				"applicationCategory": "GameApplication",
+				"offers": {
+					"@type": "Offer",
+					"price": "0",
+					"priceCurrency": "USD",
+					"availability": "https://schema.org/OnlineOnly"
+				},
+				"operatingSystem": "Web"
+				},
+				{
+				"@type": "CollectionPage",
+				"name": "Recipes",
+				"url": "https://superjeffc.com/recipes",
+				"description": "A collection of authentic home-cooked recipes."
+				}
+			]
+			}
+		]
+		}
+		</script>
+	</head>
+
+	<body>
+		<main class="container">
+    		{{ content }}
+		</main>
+
+		<footer class="blog-footer">
+			<p>&copy; {{ "now" | date: "%Y" }} unsalted & unsweetened</p>
+			<p>
+				a project by <a href="/" style="color: var(--accent-color); text-decoration: none;">superjeffc.com</a> |
+				<a href="/blog" style="color: var(--accent-color); text-decoration: none;">blog</a> |
+				<a href="/blog/disclaimer" style="color: var(--accent-color); text-decoration: none;">disclaimer</a>
+			</p>
+
+		</footer>
+	</body>
+</html>
