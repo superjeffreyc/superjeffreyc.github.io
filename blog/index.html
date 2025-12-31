@@ -53,9 +53,9 @@ title: Unsalted & Unsweetened
             <h2>stay intentional.</h2>
             <p>one newsletter every two weeks, focused on intentional eating.</p>
             <form id="subscribe-form" class="subscribe-form">
-                <div class="cf-turnstile" data-sitekey="0x4AAAAAACJ8wpwNdyGZQO2V"></div>
                 <input type="email" id="email" placeholder="your email address" required>
                 <button type="submit" id="sub-button">join the reset</button>
+                <div class="cf-turnstile" data-sitekey="0x4AAAAAACJ8wpwNdyGZQO2V"></div>
             </form>
             <p id="msg" style="display:none; margin-top:10px; font-size:1.5rem;"></p>
         </section>
@@ -78,7 +78,7 @@ title: Unsalted & Unsweetened
 
         btn.disabled = true;
         msg.style.display = 'block';
-        msg.innerText = 'sending invitation...';
+        msg.innerText = 'sending invitation... please be patient...';
 
         try {
             const response = await fetch('https://subscribe.superjeffc.com/subscribe', {

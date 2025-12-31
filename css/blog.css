@@ -163,15 +163,19 @@ header.blog-header {
 .subscribe-form {
     display: flex;
     justify-content: center;
+    align-items: center; /* Ensures vertical alignment */
     gap: 15px;
     margin-top: 35px;
+    flex-wrap: wrap; /* Allows Turnstile to wrap on smaller screens */
 }
 
 .subscribe-form input {
     padding: 15px 20px;
     border: none;
-    width: 350px;
+    width: 100%;       /* Change from 350px to 100% */
+    max-width: 350px;  /* Keeps it from getting too wide on desktop */
     font-size: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't add to width */
 }
 
 .subscribe-form button {
@@ -200,4 +204,11 @@ footer.blog-footer {
     .subscribe-form input { width: 100%; }
     .logo { font-size: 2.5rem; }
     .mission { padding: 40px 20px; }
+}
+
+.cf-turnstile {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Forces it to its own line for a cleaner look */
+    margin-bottom: 10px;
 }
