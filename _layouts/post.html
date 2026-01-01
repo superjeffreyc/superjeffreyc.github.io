@@ -19,7 +19,7 @@
 		<meta name="twitter:title" content="{{ page.title }}">
 		<meta name="twitter:description" content="Software engineering, cooking recipes, and piano by Jeff Chan.">
 
-		<link rel="stylesheet" type="text/css" href="/css/blog.css">
+		<link rel="stylesheet" type="text/css" href="/css/post.css">
 		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="shortcut icon" href="/favicon.ico" />
@@ -113,19 +113,16 @@
 				<div class="post-content">
 					{{ content }}
 				</div>
-
-				<section class="subscribe-break">
-					<h2>stay intentional.</h2>
-					<form class="subscribe-form">
-						<input type="email" placeholder="your email address" required>
-						<button type="submit">join the reset</button>
-					</form>
-				</section>
 			</article>
 
 			<footer class="blog-footer">
 				<p>&copy; {{ "now" | date: "%Y" }} unsalted & unsweetened</p>
-			</footer >
+				<p>
+					a project by <a href="/" style="color: var(--accent-color); text-decoration: none;">superjeffc.com</a> |
+					<a href="/blog" style="color: var(--accent-color); text-decoration: none;">blog</a> |
+					<a href="/blog/disclaimer" style="color: var(--accent-color); text-decoration: none;">disclaimer</a>
+				</p>
+			</footer>
 		</div>
 	</body>
 </html>
