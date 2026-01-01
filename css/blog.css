@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --bg-color: #fdfcf8;
     --text-color: #2c2c2c;
@@ -199,58 +203,42 @@ footer.blog-footer {
 }
 
 @media (max-width: 800px) {
-    /* Set the global horizontal limit on the body only */
-    body {
-        width: 100% !important;
-        max-width: 100vw !important;
-        margin: 0 !important;
-        padding: 0 !important; /* Keep body padding 0 to avoid stacking */
+    /* Prevent the whole page from shaking or scrolling sideways */
+    html, body {
         overflow-x: hidden;
-        display: block; /* Ensures it doesn't behave like a flex item */
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
-    /* Apply the 15px "Safety Margin" to your containers only */
-    .container, nav.blog-nav, header.blog-header {
+    /* Standardize containers to fit the screen exactly */
+    .container,
+    nav.blog-nav,
+    header.blog-header,
+    .mission,
+    .subscribe-break {
         width: 100% !important;
         max-width: 100% !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
-        box-sizing: border-box;
+        box-sizing: border-box; /* Ensures 100% width includes the padding */
     }
 
-    /* Ensure the mission box doesn't add its own extra width */
-    .mission {
-        width: 100% !important;
-        margin: 20px 0 !important;
-        padding: 30px 15px !important; /* Matches the 15px theme */
+    /* Fix the specific text elements that might be too wide */
+    .tagline {
+        letter-spacing: 2px !important; /* High letter-spacing forces overflow */
+        word-wrap: break-word;
     }
 
-    .mission p {
-        font-size: 1.1rem; /* Slightly smaller for mobile readability */
-    }
-
-    /* Logo scaling */
     .logo {
         font-size: 2.2rem !important;
-        line-height: 1.1;
+        word-wrap: break-word;
     }
 
-    /* Article Card Layout */
-    .article-card {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    /* Subscription Break scaling */
-    .subscribe-break {
-        padding: 50px 20px !important;
-        margin: 60px 0 !important;
-    }
-
-    .subscribe-break h2 {
-        font-size: 1.8rem !important;
+    .mission p, .article-info p {
+        max-width: 100% !important; /* Remove the 800px/700px caps */
     }
 }
 
