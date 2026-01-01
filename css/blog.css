@@ -199,17 +199,41 @@ footer.blog-footer {
 }
 
 @media (max-width: 800px) {
-    /* Ensure the main content doesn't touch the screen edges */
-    .container {
-        padding: 0 25px;
+    /* Reset the body and container for mobile */
+    body {
+        width: 100% !important;
+        margin: 0 !important;
     }
 
-    .article-card { flex-direction: column; gap: 15px; }
-    .subscribe-form { flex-direction: column; align-items: stretch; } /* stretch makes buttons full width */
-    .subscribe-form input { width: 100%; max-width: none; }
-    .logo { font-size: 2.2rem; } /* Slightly smaller for mobile headers */
-    .mission { padding: 30px 20px; }
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px; /* Small breathing room on sides */
+        box-sizing: border-box;
+    }
+
+    /* Reduce heavy padding that eats up narrow screens */
+    .mission {
+        padding: 30px 15px; /* Much smaller padding for mobile */
+        margin: 20px 0;
+    }
+
+    /* Scale down the typography */
+    .logo {
+        font-size: 2rem;
+    }
+
+    .article-info h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Ensure forms don't overflow */
+    .subscribe-form input {
+        width: 100%;
+        max-width: 100%;
+    }
 }
+
 
 .cf-turnstile {
     display: flex;
