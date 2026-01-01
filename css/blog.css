@@ -9,7 +9,7 @@
 
 body {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
     background-color: var(--bg-color);
     min-height: 100vh;
     position: relative;
@@ -199,11 +199,16 @@ footer.blog-footer {
 }
 
 @media (max-width: 800px) {
+    /* Ensure the main content doesn't touch the screen edges */
+    .container {
+        padding: 0 25px;
+    }
+
     .article-card { flex-direction: column; gap: 15px; }
-    .subscribe-form { flex-direction: column; align-items: center; }
-    .subscribe-form input { width: 100%; }
-    .logo { font-size: 2.5rem; }
-    .mission { padding: 40px 20px; }
+    .subscribe-form { flex-direction: column; align-items: stretch; } /* stretch makes buttons full width */
+    .subscribe-form input { width: 100%; max-width: none; }
+    .logo { font-size: 2.2rem; } /* Slightly smaller for mobile headers */
+    .mission { padding: 30px 20px; }
 }
 
 .cf-turnstile {
