@@ -130,7 +130,14 @@ body {
 }
 
 /* Mobile Adjustments */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
     .post-title {
         font-size: 2.5rem;
     }
