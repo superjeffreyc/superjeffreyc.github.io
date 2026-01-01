@@ -199,38 +199,38 @@ footer.blog-footer {
 }
 
 @media (max-width: 800px) {
-    /* Reset the body and container for mobile */
-    body {
-        width: 100% !important;
-        margin: 0 !important;
+    /* Prevent horizontal overflow */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
     }
 
     .container {
-        width: 100%;
-        max-width: 100%;
-        padding: 0 15px; /* Small breathing room on sides */
-        box-sizing: border-box;
+        width: 100% !important;
+        padding: 0 15px !important;
     }
 
-    /* Reduce heavy padding that eats up narrow screens */
+    /* Shrink the massive internal padding */
     .mission {
-        padding: 30px 15px; /* Much smaller padding for mobile */
-        margin: 20px 0;
+        padding: 30px 15px !important;
+        margin: 20px 0 !important;
     }
 
-    /* Scale down the typography */
+    /* Prevent the tagline from stretching the screen width */
+    .tagline {
+        letter-spacing: 2px !important;
+        font-size: 0.7rem;
+        white-space: normal; /* Allows it to wrap if needed */
+    }
+
     .logo {
-        font-size: 2rem;
+        font-size: 2.2rem !important;
     }
 
-    .article-info h3 {
-        font-size: 1.5rem;
-    }
-
-    /* Ensure forms don't overflow */
+    /* Ensure forms take up all available space but no more */
     .subscribe-form input {
-        width: 100%;
-        max-width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 }
 
