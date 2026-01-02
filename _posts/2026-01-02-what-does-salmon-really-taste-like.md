@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Four Sugar Cubes: Why I Stopped Glazing My Salmon"
-date: 2026-01-01
-category: mindset
+title: "What Does Salmon Really Taste Like?"
+date: 2026-01-02
+category: experiment
 excerpt: "I've come to a realization that I've been using salmon as a vessel for sugar. Whether it was a sticky honey glaze or sweet soy sauce, I wasn't eating fish—I was eating the sauce."
 ---
 
@@ -27,12 +27,25 @@ Pro-tip: Do a 10-minute salt. By seasoning the fillet at least 10 minutes prior 
 
 <img src="https://assets.superjeffc.com/food/raw-salmon-with-salt.jpg" alt="Raw Salmon With Salt" width="300" />
 
+### The Verdict
 
-Because this dish only had two ingredients, I could actually taste every single ingredient. Without any sugar to hide behind, I finally experienced the true taste of salmon—delicate and buttery meat, along with sweetness from the salmon fat.
+Because this dish only had two ingredients, there was nowhere for the flavor to hide. Without any sugar to hide behind, I was actually tasting the salmon.
 
-### Your challenge
+#### The Profile
 
-The next time you cook salmon, try leaving the sauce in the fridge or use less of it. Use half the ingredients you think you need. Can you taste the salmon?
+Delicate, buttery, and surprisingly sweet due to the natural salmon fats.
+
+#### The Discovery
+
+I realized that sweetness doesn't have to come from the sauce. When steamed properly with minimal seasoning, the salmon carries its own sweetness.
+
+#### Would I eat it again?
+
+Absolutely. Salmon has shifted from one of my sugar cravings to a weeknight staple.
+
+### The Challenge
+
+The next time you cook salmon, try using half the sauce you normally would. Does the flavor of the fish come forward?
 
 ### The Recipe: The Intentional Salmon
 
