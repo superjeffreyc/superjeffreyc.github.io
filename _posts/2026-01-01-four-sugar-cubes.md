@@ -28,7 +28,7 @@ Pro-tip: Do a 10-minute salt. By seasoning the fillet at least 10 minutes prior 
 <img src="https://assets.superjeffc.com/food/raw-salmon-with-salt.jpg" alt="Raw Salmon With Salt" width="300" />
 
 
-Because this dish only had two ingredients, I could actually taste every single ingredient. Without any sugar to hide behind, I finally experienced the true taste of salmon—delicate and flaky meat, along with sweetness from the salmon fat.
+Because this dish only had two ingredients, I could actually taste every single ingredient. Without any sugar to hide behind, I finally experienced the true taste of salmon—delicate and buttery meat, along with sweetness from the salmon fat.
 
 ### Your challenge
 
