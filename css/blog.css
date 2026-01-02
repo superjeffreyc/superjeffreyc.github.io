@@ -93,7 +93,6 @@ header.blog-header {
     font-size: 1.6rem; /* Slightly larger heading */
     margin-top: 0;
     font-weight: 400;
-    text-transform: lowercase;
 }
 
 .mission p {
@@ -140,7 +139,6 @@ header.blog-header {
     margin: 10px 0;
     font-weight: 400;
     line-height: 1.2;
-    text-transform: lowercase;
 }
 
 .article-info p {
