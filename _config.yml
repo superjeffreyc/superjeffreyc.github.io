@@ -6,3 +6,5 @@ permalink: /blog/:year/:month/:day/:title
 theme: minima
 favicon_path: favicon.ico
 repository: superjeffc/superjeffc.github.io
+include:
+  - _headers
