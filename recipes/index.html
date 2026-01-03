@@ -4,22 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeff's Kitchen - Recipes</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom animations for the polished feel */
-        @keyframes blob {
-            0% { transform: translate(0px, 0px) scale(1); }
-            33% { transform: translate(30px, -50px) scale(1.1); }
-            66% { transform: translate(-20px, 20px) scale(0.9); }
-            100% { transform: translate(0px, 0px) scale(1); }
-        }
-        .animate-blob {
-            animation: blob 7s infinite;
-        }
-        .animation-delay-2000 {
-            animation-delay: 2s;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.min.css">
+    <script src="/js/search.js" defer></script>
 </head>
 <body class="bg-slate-50 font-sans text-slate-900">
 
@@ -87,7 +73,7 @@
             <!-- Beef Chow Fun -->
             <a href="beef-chow-fun.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Beef Chow Fun">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/beef-chow-fun.jpg" alt="Beef Chow Fun" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/beef-chow-fun.jpg" alt="Beef Chow Fun" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -100,7 +86,7 @@
             <!-- Bitter Melon and Beef -->
             <a href="bitter-melon-and-beef.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Bitter Melon and Beef">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/bitter-melon-and-beef.jpg" alt="Bitter Melon and Beef" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/bitter-melon-and-beef.jpg" alt="Bitter Melon and Beef" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -113,7 +99,7 @@
             <!-- Blueberry Muffin -->
             <a href="blueberry-muffin.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Blueberry Muffin">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/blueberry-muffin.jpg" alt="Blueberry Muffin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/blueberry-muffin.jpg" alt="Blueberry Muffin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -126,7 +112,7 @@
             <!-- Cantonese Soy Sauce Noodles -->
             <a href="cantonese-soy-sauce-noodles.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Cantonese Soy Sauce Pan-Fried Noodles">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/cantonese-soy-sauce-pan-fried-noodles.jpg" alt="Cantonese Soy Sauce Pan-Fried Noodles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/cantonese-soy-sauce-pan-fried-noodles.jpg" alt="Cantonese Soy Sauce Pan-Fried Noodles" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -139,7 +125,7 @@
             <!-- Carrot Cake -->
             <a href="carrot-cake.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Carrot Cake">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/carrot-cake.jpg" alt="Carrot Cake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/carrot-cake.jpg" alt="Carrot Cake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -152,7 +138,7 @@
             <!-- Chicken Parmesan -->
             <a href="chicken-parmesan.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Chicken Parmesan">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/chicken-parmesan.jpg" alt="Chicken Parmesan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/chicken-parmesan.jpg" alt="Chicken Parmesan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -165,7 +151,7 @@
             <!-- Chicken with Ginger Scallion Oil -->
             <a href="chicken-with-ginger-scallion-oil.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Chicken with Ginger Scallion Oil">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/chicken-with-ginger-scallion-oil.jpg" alt="Chicken with Ginger Scallion Oil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/chicken-with-ginger-scallion-oil.jpg" alt="Chicken with Ginger Scallion Oil" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -178,7 +164,7 @@
             <!-- Chinese Cabbage with Vermicelli -->
             <a href="chinese-cabbage-with-vermicelli.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Chinese Cabbage with Vermicelli">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/chinese-cabbage-with-vermicelli.jpg" alt="Chinese Cabbage with Vermicelli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/chinese-cabbage-with-vermicelli.jpg" alt="Chinese Cabbage with Vermicelli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -191,7 +177,7 @@
             <!-- Chinese Claypot Rice -->
             <a href="chinese-claypot-rice.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Chinese Claypot Rice">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/chinese-claypot-rice.jpg" alt="Chinese Claypot Rice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/chinese-claypot-rice.jpg" alt="Chinese Claypot Rice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -204,7 +190,7 @@
             <!-- Chinese Tea Eggs -->
             <a href="chinese-tea-eggs.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Chinese Tea Eggs">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/chinese-tea-eggs.jpg" alt="Chinese Tea Eggs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/chinese-tea-eggs.jpg" alt="Chinese Tea Eggs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -232,7 +218,7 @@
             <!-- Danish Pastry -->
             <a href="danish-pastry.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Danish Pastry">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/danish-pastry.jpg" alt="Danish Pastry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/danish-pastry.jpg" alt="Danish Pastry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -245,7 +231,7 @@
             <!-- Dumplings -->
             <a href="dumplings.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Dumplings">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/dumplings.jpg" alt="Dumplings" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/dumplings.jpg" alt="Dumplings" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -273,7 +259,7 @@
             <!-- Ground Pork with String Beans -->
             <a href="ground-pork-with-string-beans.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Ground Pork with String Beans">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/ground-pork-with-string-beans.jpg" alt="Ground Pork with String Beans" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/ground-pork-with-string-beans.jpg" alt="Ground Pork with String Beans" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -286,7 +272,7 @@
             <!-- Honey Garlic Chicken Wings -->
             <a href="honey-garlic-chicken-wings.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Honey Garlic Chicken Wings">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/honey-garlic-chicken-wings.jpg" alt="Honey Garlic Chicken Wings" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/honey-garlic-chicken-wings.jpg" alt="Honey Garlic Chicken Wings" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -299,7 +285,7 @@
             <!-- Kielbasa with Onion -->
             <a href="kielbasa-with-onion.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Kielbasa with Onion">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/kielbasa-with-onion.jpg" alt="Kielbasa with Onion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/kielbasa-with-onion.jpg" alt="Kielbasa with Onion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -327,7 +313,7 @@
             <!-- Kimchi Fried Rice -->
             <a href="kimchi-fried-rice.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Kimchi Fried Rice">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -340,7 +326,7 @@
             <!-- Mapo Tofu -->
             <a href="mapo-tofu.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Mapo Tofu">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/mapo-tofu.jpg" alt="Mapo Tofu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/mapo-tofu.jpg" alt="Mapo Tofu" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                      <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -353,7 +339,7 @@
             <!-- Pad Kra Pao -->
             <a href="pad-kra-pao.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Pad Kra Pao">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/pad-kra-pao.jpg" alt="Pad Kra Pao" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/pad-kra-pao.jpg" alt="Pad Kra Pao" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -366,7 +352,7 @@
             <!-- Penne Alla Vodka -->
             <a href="penne-alla-vodka.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Penne Alla Vodka">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/penne-alla-vodka.jpg" alt="Penne Alla Vodka" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/penne-alla-vodka.jpg" alt="Penne Alla Vodka" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -379,7 +365,7 @@
             <!-- Pork Belly with Bean Curd -->
             <a href="pork-belly-with-bean-curd.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Pork Belly with Bean Curd">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/pork-belly-with-bean-curd.jpg" alt="Pork Belly with Bean Curd" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/pork-belly-with-bean-curd.jpg" alt="Pork Belly with Bean Curd" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -392,7 +378,7 @@
             <!-- Pork Chops with Onion -->
             <a href="pork-chops-with-onion.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Pork Chops with Onion">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/pork-chops-with-onion.jpg" alt="Pork Chops with Onion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/pork-chops-with-onion.jpg" alt="Pork Chops with Onion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -405,7 +391,7 @@
             <!-- Salmon Teriyaki -->
             <a href="salmon-teriyaki.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Salmon Teriyaki">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/salmon-teriyaki.jpg" alt="Salmon Teriyaki" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/salmon-teriyaki.jpg" alt="Salmon Teriyaki" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -418,7 +404,7 @@
             <!-- Shanghai Cifan -->
             <a href="shanghai-cifan.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Shanghai Cifan">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/shanghai-cifan.jpg" alt="Shanghai Cifan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/shanghai-cifan.jpg" alt="Shanghai Cifan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -431,7 +417,7 @@
             <!-- Shanghai Wheat Gluten -->
             <a href="shanghai-wheat-gluten.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Shanghai Wheat Gluten">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/shanghai-wheat-gluten.jpg" alt="Shanghai Wheat Gluten" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/shanghai-wheat-gluten.jpg" alt="Shanghai Wheat Gluten" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -444,7 +430,7 @@
             <!-- Soup Dumpling (Xiao Long Bao) -->
             <a href="soup-dumpling.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Soup Dumpling (Xiao Long Bao)">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/soup-dumpling.jpg" alt="Soup Dumpling (Xiao Long Bao)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/soup-dumpling.jpg" alt="Soup Dumpling (Xiao Long Bao)" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -472,7 +458,7 @@
             <!-- Spring Roll -->
             <a href="spring-roll.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Spring Roll">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/spring-roll.jpg" alt="Spring Roll" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/spring-roll.jpg" alt="Spring Roll" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -485,7 +471,7 @@
             <!-- Steamed Eggs -->
             <a href="steamed-eggs.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Steamed Eggs">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/steamed-eggs.jpg" alt="Steamed Eggs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/steamed-eggs.jpg" alt="Steamed Eggs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -498,7 +484,7 @@
             <!-- Steamed Pork with Eggs -->
             <a href="steamed-pork-with-eggs.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Steamed Pork with Eggs">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/steamed-pork-with-eggs.jpg" alt="Steamed Pork with Eggs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/steamed-pork-with-eggs.jpg" alt="Steamed Pork with Eggs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -511,7 +497,7 @@
             <!-- Steamed White Fish -->
             <a href="steamed-white-fish.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Steamed White Fish">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/steamed-white-fish.jpg" alt="Steamed White Fish" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/steamed-white-fish.jpg" alt="Steamed White Fish" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -524,7 +510,7 @@
             <!-- Tomato Egg Beef -->
             <a href="tomato-egg-beef.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Tomato Egg Beef">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/tomato-egg-beef.jpg" alt="Tomato Egg Beef" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/tomato-egg-beef.jpg" alt="Tomato Egg Beef" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -537,7 +523,7 @@
             <!-- Vegetables -->
             <a href="vegetables.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Vegetables">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/vegetables.jpg" alt="Vegetables" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/vegetables.jpg" alt="Vegetables" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -550,7 +536,7 @@
             <!-- Wonton -->
             <a href="wonton.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Wonton">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/wonton.jpg" alt="Wonton" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/wonton.jpg" alt="Wonton" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -563,7 +549,7 @@
             <!-- Zucchini with Vermicelli -->
             <a href="zucchini-with-vermicelli.html" class="recipe-card group block bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-title="Zucchini with Vermicelli">
                 <div class="relative aspect-[4/3] overflow-hidden bg-gray-50">
-                    <img src="https://assets.superjeffc.com/food/zucchini-with-vermicelli.jpg" alt="Zucchini with Vermicelli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <img src="https://assets.superjeffc.com/food/zucchini-with-vermicelli.jpg" alt="Zucchini with Vermicelli" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                     <div class="hidden w-full h-full bg-orange-100 flex items-center justify-center flex-col"><svg class="w-12 h-12 text-orange-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16.11 2.91-4.99 4.99"/><path d="M10.11 8.92a9.06 9.06 0 0 1-5.7 5.7L2.4 16.63a.85.85 0 0 0 .75 1.35h.06c1.23 0 2.22-.38 2.89-1.09l.99-.99c1.4.24 3.7.83 6.09-1.57"/><path d="M16.11 2.91a9.06 9.06 0 0 1 5.7 5.7l2.02 2.02a.85.85 0 0 1-1.35.75v-.06c0-1.23-.38-2.22-1.09-2.89l-.99-.99c.24-1.4.83-3.7-1.57-6.09"/></svg></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -594,45 +580,5 @@
             </a>
         </div>
     </footer>
-
-    <script>
-        const searchInput = document.getElementById('search-input');
-        const cards = document.querySelectorAll('.recipe-card');
-        const noResults = document.getElementById('no-results');
-        const resultsHeader = document.getElementById('results-header');
-        const resultsCount = document.getElementById('results-count');
-
-        searchInput.addEventListener('keyup', (e) => {
-            const term = e.target.value.toLowerCase();
-            let visibleCount = 0;
-
-            cards.forEach(card => {
-                const title = card.getAttribute('data-title').toLowerCase();
-                if (title.includes(term)) {
-                    card.style.display = 'block'; // Or 'flex' depending on your layout need, but block works for grid items
-                    visibleCount++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-
-            // Update Header logic
-            if (term === '') {
-                resultsHeader.textContent = "All Recipes";
-            } else {
-                resultsHeader.textContent = `Search Results for "${e.target.value}"`;
-            }
-
-            // Update count badge
-            resultsCount.textContent = `${visibleCount} Found`;
-
-            // Toggle Empty State
-            if (visibleCount === 0) {
-                noResults.classList.remove('hidden');
-            } else {
-                noResults.classList.add('hidden');
-            }
-        });
-    </script>
 </body>
 </html>
