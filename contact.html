@@ -64,139 +64,51 @@ title: Contact | Jeff Chan
     </div>
 </div>
 
-<style>
-    .form-card:hover {
-        transform: none !important;
-        box-shadow: var(--shadow); /* Optional: keeps the shadow static too */
-    }
-
-    /* Center the form and limit width */
-    .contact-container {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 40px;
-    }
-
-    .form-card {
-        width: 100%;
-        max-width: 600px; /* Limits width so it doesn't stretch too far */
-        text-align: left; /* Overrides center alignment from cards if necessary */
-        background: var(--card-bg, #fff); /* Fallback to white if var not defined */
-        cursor: default; /* Remove pointer cursor from index cards */
-    }
-
-    /* Form Inputs Styling to match cleanliness of Index */
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .form-group label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: 600;
-        font-size: 0.9rem;
-        color: #333;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        width: 95%;
-        padding: 12px;
-        border: 2px solid #e2e8f0;
-        border-radius: 8px;
-        font-size: 1rem;
-        transition: border-color 0.3s ease;
-        font-family: inherit;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-        border-color: #6366f1; /* Your primary indigo color */
-        outline: none;
-    }
-
-    /* Button Styling */
-    .submit-btn {
-        width: 100%;
-        padding: 12px;
-        background-color: #6366f1;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-weight: 600;
-        cursor: pointer;
-        margin-top: 10px;
-        transition: background 0.3s;
-    }
-
-    .submit-btn:hover {
-        background-color: #4f46e5;
-    }
-
-    .submit-btn:disabled {
-        background-color: #a5a6f6;
-        cursor: not-allowed;
-    }
-
-    /* Status Messages */
-    #status-message {
-        margin-top: 15px;
-        padding: 10px;
-        border-radius: 6px;
-        text-align: center;
-        font-size: 0.9rem;
-        display: none;
-    }
-
-    .visible-success { display: block !important; background: #d1fae5; color: #065f46; }
-    .visible-error { display: block !important; background: #fee2e2; color: #991b1b; }
-</style>
-
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
-    <script>
-        const WORKER_URL = 'https://contact.superjeffc.com/';
+<script>
+    const WORKER_URL = 'https://contact.superjeffc.com/';
 
-        const form = document.getElementById('personalContactForm');
-        const statusMsg = document.getElementById('status-message');
-        const submitBtn = document.getElementById('submitBtn');
-        const btnText = document.getElementById('btnText');
+    const form = document.getElementById('personalContactForm');
+    const statusMsg = document.getElementById('status-message');
+    const submitBtn = document.getElementById('submitBtn');
+    const btnText = document.getElementById('btnText');
 
-        form.addEventListener('submit', async function(e) {
-            e.preventDefault();
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
 
-            // UI Feedback: Loading
-            btnText.textContent = 'Sending...';
-            submitBtn.disabled = true;
+        // UI Feedback: Loading
+        btnText.textContent = 'Sending...';
+        submitBtn.disabled = true;
 
-            // Gather data
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData.entries());
+        // Gather data
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
 
-            try {
-                const response = await fetch(WORKER_URL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(data),
-                });
+        try {
+            const response = await fetch(WORKER_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
 
-                if (response.ok) {
-                    statusMsg.textContent = "Thanks! Your message has been sent successfully.";
-                    statusMsg.className = "visible-success";
-                    form.reset();
-                    form.style.display = 'none';
-                    btnText.textContent = 'Message Sent!';
-                } else {
-                    throw new Error('Server responded with an error.');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                statusMsg.textContent = "Oops! Something went wrong. Please try again later.";
-                statusMsg.className = "visible-error";
-                btnText.textContent = 'Send Message';
-                submitBtn.disabled = false;
+            if (response.ok) {
+                statusMsg.textContent = "Thanks! Your message has been sent successfully.";
+                statusMsg.className = "visible-success";
+                form.reset();
+                form.style.display = 'none';
+                btnText.textContent = 'Message Sent!';
+            } else {
+                throw new Error('Server responded with an error.');
             }
-        });
-    </script>
+        } catch (error) {
+            console.error('Error:', error);
+            statusMsg.textContent = "Oops! Something went wrong. Please try again later.";
+            statusMsg.className = "visible-error";
+            btnText.textContent = 'Send Message';
+            submitBtn.disabled = false;
+        }
+    });
+</script>
