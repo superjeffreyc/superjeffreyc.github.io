@@ -16,12 +16,12 @@
         <meta property="og:url" content="https://superjeffc.com{{ page.url }}">
 		<meta property="og:title" content="{{ page.title }}">
 		<meta property="og:description" content="{{ desc }}">
-		<meta property="og:image" content="https://superjeffc.com/jeff_chan_photo.webp">
+		<meta property="og:image" content="https://superjeffc.com/assets/images/jeff_chan_photo.webp">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="{{ page.title }}">
 		<meta name="twitter:description" content="{{ desc }}">
 
-		<link rel="stylesheet" type="text/css" href="/css/blog.css">
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.min.css">
 		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="shortcut icon" href="/favicon.ico" />
@@ -29,7 +29,6 @@
 		<link rel="manifest" href="/site.webmanifest" />
 		<link rel="canonical" href="https://superjeffc.com{{ page.url }}">
 
-		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 		<script type="application/ld+json">
 		{
 		"@context": "https://schema.org",
@@ -95,7 +94,7 @@
 		</script>
 	</head>
 
-	<body>
+	<body class="blog-body">
 		<main class="container">
     		{{ content }}
 		</main>

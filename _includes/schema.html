@@ -1,0 +1,76 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://superjeffc.com/#person",
+      "name": "Jeff Chan",
+      "jobTitle": "Software Engineer",
+      "url": "https://superjeffc.com",
+      "sameAs": [
+        "https://github.com/superjeffc",
+        "https://linkedin.com/in/superjeffc",
+        "https://youtube.com/@thesuperjeffc"
+      ],
+      "description": "Software Engineer specializing in interactive web applications, cooking recipes, and piano arrangements."
+    }
+    {% if page.url == '/' or page.url == '/index.html' %}
+    ,{
+      "@type": "WebSite",
+      "@id": "https://superjeffc.com/#website",
+      "url": "https://superjeffc.com",
+      "name": "superjeffc",
+      "publisher": { "@id": "https://superjeffc.com/#person" },
+      "hasPart": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "Word Frog",
+          "url": "https://wordfrog.superjeffc.com",
+          "description": "A daily interactive, browser-based word guessing game that challenges your vocabulary.",
+          "applicationCategory": "EducationalApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/OnlineOnly"
+          },
+          "operatingSystem": "Web"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Big Bowl",
+          "url": "https://bigbowl.superjeffc.com",
+          "description": "An interactive, browser-based word party game for groups.",
+          "applicationCategory": "GameApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/OnlineOnly"
+          },
+          "operatingSystem": "Web"
+        },
+        {
+          "@type": "CollectionPage",
+          "name": "Recipes",
+          "url": "https://superjeffc.com/recipes",
+          "description": "A collection of authentic home-cooked recipes."
+        }
+      ]
+    }
+    {% elsif page.layout == 'contact' or page.url contains 'contact' %}
+    ,{
+      "@type": "ContactPage",
+      "@id": "https://superjeffc.com/contact",
+      "url": "https://superjeffc.com/contact",
+      "name": "Contact Jeff Chan",
+      "description": "Get in touch with Jeff Chan for software engineering inquiries or collaborations.",
+      "mainEntity": {
+        "@id": "https://superjeffc.com/#person"
+      }
+    }
+    {% endif %}
+  ]
+}
+</script>

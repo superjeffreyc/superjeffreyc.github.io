@@ -1,65 +1,61 @@
 ---
-layout: contact
+layout: default
 title: Contact | Jeff Chan
+turnstile: true
+js:
+  - /js/contact.js
 ---
 
-<div class="blurb">
-    <h1>Let's Chat.</h1>
-    <p class="intro-text">
+<div class="flex flex-col items-start gap-4">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900">Let's Chat.</h1>
+    <p class="text-lg md:text-xl text-slate-700 leading-relaxed max-w-xl">
         Fill out the form below to connect with me.
     </p>
-    <div class="social-links">
-        <a href="https://github.com/superjeffc" target="_blank" title="GitHub" aria-label="GitHub">
-            <svg height="32" viewBox="0 0 16 16" width="32" class="social-icon" aria-hidden="true" role="img">
-                <path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+    <div class="flex gap-4 my-2">
+        <a href="https://github.com/superjeffc" target="_blank" title="GitHub" aria-label="GitHub" class="text-slate-800 hover:text-black hover:scale-110 transition-all duration-200">
+            <svg height="32" viewBox="0 0 16 16" width="32" class="fill-current" aria-hidden="true" role="img">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
             </svg>
         </a>
 
-        <a href="https://linkedin.com/in/superjeffc" target="_blank" title="LinkedIn" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16" class="social-icon" aria-hidden="true" role="img">
-                <path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5 5 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+        <a href="https://linkedin.com/in/superjeffc" target="_blank" title="LinkedIn" aria-label="LinkedIn" class="text-slate-800 hover:text-[#0077B5] hover:scale-110 transition-all duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16" class="fill-current" aria-hidden="true" role="img">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5 5 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
             </svg>
         </a>
     </div>
 </div>
 
-<hr class="divider">
+<hr class="my-12 border-0 h-px bg-slate-200">
 
-<div class="projects-section">
-    <div class="contact-container">
-
-        <div class="card form-card">
-            <div class="card-content">
-                <form id="personalContactForm">
-                    <div class="form-group">
-                        <label for="full-name">Name</label>
-                        <input type="text" id="full-name" name="name" placeholder="John Doe" autocomplete="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry" autocomplete="off" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
-                    </div>
-
-                    <div class="cf-turnstile" data-sitekey="0x4AAAAAACJTEik3RwZJb28c"></div>
-
-                    <button type="submit" class="submit-btn" id="submitBtn">
-                        <span id="btnText">Send Message</span>
-                    </button>
-                </form>
-
-                <div id="status-message"></div>
-            </div>
+<div class="w-full max-w-2xl border border-slate-200 rounded-2xl p-6 md:p-8 bg-white shadow-sm self-start mb-12">
+    <form id="personalContactForm" class="flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+            <label for="full-name" class="text-sm font-semibold text-slate-700">Name</label>
+            <input type="text" id="full-name" name="name" placeholder="John Doe" autocomplete="name" required class="w-full px-4 py-3 border border-slate-200 rounded-xl bg-slate-50 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
         </div>
-    </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="email" class="text-sm font-semibold text-slate-700">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" required class="w-full px-4 py-3 border border-slate-200 rounded-xl bg-slate-50 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="subject" class="text-sm font-semibold text-slate-700">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project Inquiry" autocomplete="off" required class="w-full px-4 py-3 border border-slate-200 rounded-xl bg-slate-50 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <label for="message" class="text-sm font-semibold text-slate-700">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required class="w-full px-4 py-3 border border-slate-200 rounded-xl bg-slate-50 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all resize-none"></textarea>
+        </div>
+
+        <div class="cf-turnstile self-start" data-sitekey="0x4AAAAAACJTEik3RwZJb28c"></div>
+
+        <button type="submit" class="w-full py-4 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-bold transition-all duration-200 shadow-md cursor-pointer flex items-center justify-center" id="submitBtn">
+            <span id="btnText">Send Message</span>
+        </button>
+    </form>
+
+    <div id="status-message" class="mt-4 text-center text-sm font-semibold"></div>
 </div>

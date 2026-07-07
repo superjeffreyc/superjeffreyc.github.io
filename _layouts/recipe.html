@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/recipe.css">
-	</head>
-	<body>
 
+		<meta name="description" content="Authentic recipe for {{ page.title }} by Jeff Chan.">
+		<meta name="author" content="Jeff Chan">
+		<meta name="robots" content="index, follow">
+
+		<!-- Open Graph / Twitter Card -->
+		<meta property="og:type" content="article">
+		<meta property="og:url" content="https://superjeffc.com{{ page.url }}">
+		<meta property="og:title" content="{{ page.title }}">
+		<meta property="og:description" content="Authentic recipe for {{ page.title }} by Jeff Chan.">
+		<meta property="og:image" content="{{ page.image }}">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="{{ page.title }}">
+		<meta name="twitter:description" content="Authentic recipe for {{ page.title }} by Jeff Chan.">
+		<meta name="twitter:image" content="{{ page.image }}">
+
+		<!-- Unified Tailwind Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.min.css">
+
+		<!-- Favicons -->
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+
+		<link rel="canonical" href="https://superjeffc.com{{ page.url }}">
+
+		<!-- Structured Recipe Schema -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Recipe",
+		  "name": "{{ page.title }}",
+		  "image": "{{ page.image }}",
+		  "author": {
+		    "@type": "Person",
+		    "name": "Jeff Chan",
+		    "url": "https://superjeffc.com"
+		  },
+		  "publisher": {
+		    "@type": "Person",
+		    "name": "Jeff Chan",
+		    "url": "https://superjeffc.com"
+		  }
+		}
+		</script>
+	</head>
+	<body class="recipe-body">
 		<main class="container">
     		{{ content }}
-		</main><!-- /.container -->
+		</main>
 		<footer>
     		<ul>
-		  	  <li><a href="https://superjeffc.com/recipes/">Recipes Home</a></li>
+		  	  <li><a href="/recipes/">Recipes Home</a></li>
 		  	</ul>
 		</footer>
 	</body>

@@ -5,222 +5,280 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-
 <url>
   <loc>https://superjeffc.com/</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/index.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://superjeffc.com/blog/</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/blog/index.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://superjeffc.com/recipes/</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/contact</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/index.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/blog/2026/01/02/what-does-salmon-really-taste-like</loc>
+  <loc>https://superjeffc.com/contact.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/blog/disclaimer.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/blog/2026/01/02/what-does-salmon-really-taste-like.html</loc>
   <lastmod>2026-01-02T12:41:29+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/blog/disclaimer</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/blog/2026/01/10/simply-eggs.html</loc>
+  <lastmod>2026-01-10T12:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/beef-chow-fun</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/blog/2026/01/18/product-review-elite-gourmet-egg-cooker.html</loc>
+  <lastmod>2026-01-18T12:00:00+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/bitter-melon-and-beef</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/welcome/index.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/yut/index.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/yut_version.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.50</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/linear-algebra-helper/index.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/recipes/bagels.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/blueberry-muffin</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/beef-chow-fun.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/cantonese-soy-sauce-noodles</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/bitter-melon-and-beef.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/carrot-cake</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/blueberry-muffin.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/chicken-parmesan</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/brownies.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/chicken-with-ginger-scallion-oil</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/cantonese-soy-sauce-noodles.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/chinese-cabbage-with-vermicelli</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/carrot-cake.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/recipes/chicken-and-onion-stir-fry.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/recipes/chicken-parmesan.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/recipes/chicken-with-ginger-scallion-oil.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://superjeffc.com/recipes/chinese-cabbage-with-vermicelli.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://superjeffc.com/recipes/chinese-claypot-rice</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/chinese-tea-eggs</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/chinese-claypot-rice.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/curry-chicken</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/chinese-tea-eggs.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/danish-pastry</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/cream-cheese.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/dumplings</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/danish-pastry.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/eggplant-with-garlic-sauce</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/dumplings.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/ground-pork-with-string-beans</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/fried-rice.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/honey-garlic-chicken-wings</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/ground-pork-with-string-beans.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/chicken-and-onion-stir-fry</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/honey-garlic-chicken-wings.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/korean-rice-cakes</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/mapo-tofu.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/fried-rice</loc>
-  <lastmod>2026-06-23T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/oatmeal-energy-bars.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/mapo-tofu</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/pad-kra-pao.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/pad-kra-pao</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/penne-alla-vodka.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/penne-alla-vodka</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/pork-belly-with-bean-curd.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/pork-belly-with-bean-curd</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/pork-chops-with-onion.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/pork-chops-with-onion</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/purple-potato-latte.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/salmon-teriyaki</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/salmon-teriyaki.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/shanghai-cifan</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/shanghai-cifan.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/shanghai-wheat-gluten</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/shanghai-wheat-gluten.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/soup-dumpling</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/smiling-red-dates.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/spaghetti-carbonara</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/soup-dumpling.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/spring-roll</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/spring-roll.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/steamed-eggs</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/steamed-eggs.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/steamed-pork-with-eggs</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/steamed-pork-with-eggs.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/steamed-white-fish</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/steamed-white-fish.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/tomato-egg-beef</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/tomato-egg-beef.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/vegetables</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/vegetables.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/wonton</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/wonton.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://superjeffc.com/recipes/zucchini-with-vermicelli</loc>
-  <lastmod>2026-01-02T12:41:29+00:00</lastmod>
+  <loc>https://superjeffc.com/recipes/zucchini-with-vermicelli.html</loc>
+  <lastmod>2026-07-06T22:55:28+00:00</lastmod>
   <priority>0.64</priority>
 </url>
-
 
 </urlset>

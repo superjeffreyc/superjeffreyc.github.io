@@ -2,9 +2,13 @@ title: Jeff Chan | Software Engineer
 name: Jeff Chan | Software Engineer
 description: Personal portfolio and landing page
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title.html
 theme: minima
 favicon_path: favicon.ico
 repository: superjeffc/superjeffc.github.io
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:name.html
 include:
   - _headers

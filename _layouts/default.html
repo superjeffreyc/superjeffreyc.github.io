@@ -6,98 +6,54 @@
 
 		<title>{{ page.title }}</title>
 
-		<meta name="description" content="Personal website of Jeff Chan, a Software Engineer featuring interactive web applications, authentic cooking recipes, and piano arrangements.">
+		<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Personal website of Jeff Chan, a Software Engineer featuring interactive web applications, authentic cooking recipes, and piano arrangements.{% endif %}">
 		<meta name="author" content="Jeff Chan">
 		<meta name="robots" content="index, follow">
 
-		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://superjeffc.com/">
+		<!-- Open Graph -->
+		<meta property="og:type" content="{% if page.url == '/contact' %}profile{% else %}website{% endif %}">
+		<meta property="og:url" content="https://superjeffc.com{{ page.url }}">
 		<meta property="og:title" content="{{ page.title }}">
-		<meta property="og:description" content="Explore software projects, authentic home-cooked recipes, and piano arrangements by Jeff Chan.">
-		<meta property="og:image" content="https://superjeffc.com/jeff_chan_photo.webp">
+		<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Explore software projects, authentic home-cooked recipes, and piano arrangements by Jeff Chan.{% endif %}">
+		<meta property="og:image" content="https://superjeffc.com/assets/images/jeff_chan_photo.webp">
+
+		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="{{ page.title }}">
-		<meta name="twitter:description" content="Software engineering, cooking recipes, and piano by Jeff Chan.">
+		<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Software engineering, cooking recipes, and piano by Jeff Chan.{% endif %}">
 
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- Unified Tailwind Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/assets/css/style.min.css">
+
+		<!-- Favicons -->
 		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="shortcut icon" href="/favicon.ico" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="manifest" href="/site.webmanifest" />
 
-		<script type="application/ld+json">
-		{
-		"@context": "https://schema.org",
-		"@graph": [
-			{
-			"@type": "Person",
-			"@id": "https://superjeffc.com/#person",
-			"name": "Jeff Chan",
-			"jobTitle": "Software Engineer",
-			"url": "https://superjeffc.com",
-			"sameAs": [
-				"https://github.com/superjeffc",
-				"https://linkedin.com/in/superjeffc",
-				"https://youtube.com/@thesuperjeffc"
-			],
-			"description": "Software Engineer specializing in interactive web applications, cooking recipes, and piano arrangements."
-			},
-			{
-			"@type": "WebSite",
-			"@id": "https://superjeffc.com/#website",
-			"url": "https://superjeffc.com",
-			"name": "superjeffc",
-			"publisher": { "@id": "https://superjeffc.com/#person" },
-			"hasPart": [
-				{
-				"@type": "SoftwareApplication",
-				"name": "Word Frog",
-				"url": "https://wordfrog.superjeffc.com",
-				"description": "A daily interactive, browser-based word guessing game that challenges your vocabulary.",
-				"applicationCategory": "EducationalApplication",
-				"offers": {
-					"@type": "Offer",
-					"price": "0",
-					"priceCurrency": "USD",
-					"availability": "https://schema.org/OnlineOnly"
-				},
-				"operatingSystem": "Web"
-				},
-				{
-				"@type": "SoftwareApplication",
-				"name": "Big Bowl",
-				"url": "https://bigbowl.superjeffc.com",
-				"description": "An interactive, browser-based word party game for groups.",
-				"applicationCategory": "GameApplication",
-				"offers": {
-					"@type": "Offer",
-					"price": "0",
-					"priceCurrency": "USD",
-					"availability": "https://schema.org/OnlineOnly"
-				},
-				"operatingSystem": "Web"
-				},
-				{
-				"@type": "CollectionPage",
-				"name": "Recipes",
-				"url": "https://superjeffc.com/recipes",
-				"description": "A collection of authentic home-cooked recipes."
-				}
-			]
-			}
-		]
-		}
-		</script>
+		<!-- Dynamic Turnstile & Scripts -->
+		{% if page.turnstile %}
+		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+		{% endif %}
+
+		{% if page.js %}
+			{% for script in page.js %}
+			<script src="{{ script }}" defer></script>
+			{% endfor %}
+		{% endif %}
+
+		<!-- Dynamic JSON-LD Schema -->
+		{% include schema.html %}
 	</head>
 
-	<body>
-		<main class="container">
-    		{{ content }}
-			<footer>
-				<ul>
-					<li><a href="/" class="contact-link">Home</a></li>
-					<li><a href="/contact" class="contact-link">Contact</a></li>
+	<body class="has-bg bg-transparent min-h-screen flex flex-col font-sans antialiased text-slate-800">
+		<main class="mx-auto w-[90%] md:w-[70%] max-w-5xl pt-10 md:pt-16 relative flex-grow flex flex-col">
+			{{ content }}
+			<footer class="mt-12 py-8 border-t border-slate-900">
+				<ul class="flex gap-6 font-bold">
+					<li><a href="/" class="text-xl text-slate-800 hover:text-blue-600 hover:underline transition-colors">Home</a></li>
+					<li><a href="/contact" class="text-xl text-slate-800 hover:text-blue-600 hover:underline transition-colors">Contact</a></li>
 				</ul>
 			</footer>
 		</main>
