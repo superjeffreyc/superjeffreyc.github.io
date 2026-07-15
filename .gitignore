@@ -3,3 +3,6 @@ _site/
 # Agent artifacts
 .agents
 jekyll_server.log
+
+# Dependencies
+node_modules/
